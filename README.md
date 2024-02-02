@@ -21,3 +21,7 @@ The three biggest are:
 - .dict() function is now renamed to .model_dump()
 - schema_extra function within a Config class is now renamed to json_schema_extra
 - Optional variables need a =None example: id: Optional[int] = None
+
+## SQL Queries
+.mode table
+INSERT INTO todos(title, description, priority, complete) VALUES ('Go to Store', 'To pick up eggs', 4, False);
