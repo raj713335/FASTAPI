@@ -24,4 +24,18 @@ The three biggest are:
 
 ## SQL Queries
 .mode table
-INSERT INTO todos(title, description, priority, complete) VALUES ('Go to Store', 'To pick up eggs', 4, False);
+INSERT INTO todos(title, description, priority, complete) VALUES ('Go to Store', 'To pick up eggs', 4, False);\
+
+
+## ALEMBIC COMMANDS
+
+```commandline
+pip install alembic
+```
+
+| VAR                           | DESCRIPTION                                 |
+|-------------------------------|---------------------------------------------|
+| alembic init {folder name}    | Initializes a new, generic environment      |
+| alembic revision -m {message} | creates a new revision of the environment   |
+| alembic upgrade {revision #}  | Run our upgrade migration to our database   |
+| alembic downgrade -1          | Run our downgrade migration to our database |
