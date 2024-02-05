@@ -5,8 +5,8 @@ from sqlalchemy.orm import Session
 from starlette import status
 
 from fastapi import Depends, HTTPException, Path, APIRouter
-from models import Todos
-from database import SessionLocal
+from ..models import Todos
+from ..database import SessionLocal
 
 from .auth import get_current_user
 

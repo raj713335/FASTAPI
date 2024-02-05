@@ -2,6 +2,7 @@
 
 ```commandline
 uvicorn books:app --reload
+uvicorn TodoApp.main:app --reload
 ```
 
 
@@ -39,3 +40,10 @@ pip install alembic
 | alembic revision -m {message} | creates a new revision of the environment   |
 | alembic upgrade {revision #}  | Run our upgrade migration to our database   |
 | alembic downgrade -1          | Run our downgrade migration to our database |
+
+
+## Pytest 
+
+```commandline
+pytest --disable-warnings
+```
